@@ -1,7 +1,7 @@
 ---
 vagrantfile-local:
     vm:
-        box: twitter_0.0.1
+        box: camdesigns/twitter-box
         box_url: 'https://vagrantcloud.com/camdesigns/twitter-box/version/1/provider/virtualbox.box'
         hostname: null
         network:

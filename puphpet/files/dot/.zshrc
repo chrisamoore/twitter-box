@@ -39,9 +39,10 @@ alias df='df -h'
 # cd
 alias ..='cd ..'
 
-alias api='cd /var/www/twitter-laravel/twitter-api'
+alias api='cd /var/www/twitter-laravel/twitter-laravel'
 alias ui='cd /var/www/twitter-laravel/twitter-ui'
-alias l4='cd /var/www/twitter-laravel/twitter-api'
+alias l4='cd /var/www/twitter-laravel/twitter-laravel'
+alias bp='cd /var/www/twitter-laravel/twitter-api-blueprint'
 
 alias mongo_limit='DBQuery.shellBatchSize = 3000'
 
@@ -66,11 +67,7 @@ alias blue='cd /var/www/twitter-api-blueprint'
 alias ui='cd /var/www/twitter-ui'
 
 alias art='/var/www/twitter-laravel/artisan'
-
-alias test_all='/usr/bin/php /vagrant/twitter-laravel/artisan env:reset -f && /vagrant/twitter-laravel/vendor/bin/phpunit -c /vagrant/twitter-laravel/phpunit.xml && /vagrant/twitter-api-blueprint/bin/run-dredd'
-
 alias bounce='sudo cp /vagrant/puphpet/files/custom/nginx.conf /etc/nginx/conf.d/nginx.conf && sudo nginx -c /etc/nginx/nginx.conf -t && sudo /etc/init.d/nginx restart && sudo /etc/init.d/php5-fpm restart'
-alias super_bounce='/usr/bin/php /var/www/twitter-laravel/artisan beanstalkd:clear && sudo cp /vagrant/puphpet/files/custom/supervisord.conf /etc/supervisor/conf.d/supervisord.conf && sudo supervisord -c /etc/supervisor/conf.d/supervisord.conf'
 alias pool_bounce='sudo cp -ir /vagrant/puphpet/files/custom/www.conf /etc/php5/fpm/pool.d/www.conf'
 alias dot='cp /vagrant/puphpet/files/dot/.zshrc ~/.zshrc && . ~/.zshrc'
 

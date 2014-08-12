@@ -7,13 +7,26 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/php
+
+# Last Substitute String:
+$
+
 # Command Line History (newest to oldest):
 :q
-:w
 :wq
-:tabnew ~/.ssh/github_rsa
+:w!
+:w
+:!wq
+:/mt
+:i
 
 # Search String History (newest to oldest):
+?/php
+? \<alias\>
+? mt
+?/usr/local/Cellar/scons/2.2.0
 
 # Expression History (newest to oldest):
 
@@ -22,146 +35,393 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	Host github.com
-	  IdentifyFile ~/.ssh/github_rsa
-""-	CHAR	0
-	_
+"0	CHAR	0
+	#
+""1	CHAR	0
+	puppet
+"2	LINE	0
+	</phpunit>
+"3	LINE	0
+	sord]
+"4	LINE	0
+	logfile = /tmp/supervisord.log
+"5	LINE	0
+	logfile_maxbytes = 50MB
+"6	LINE	0
+	logfile_backups=10
+"7	LINE	0
+	loglevel = info
+"8	LINE	0
+	pidfile = /tmp/supervisord.pid
+"9	LINE	0
+	nodaemon = false
+"-	CHAR	0
+	puppet
 
 # File marks:
-'0  2  16  ~/Sites/neokeo-project/setup/db/files/mysql/grant_root.sql
-'1  1  0  ~/.ssh/id_rsa.pub
-'2  5  22  ~/.ssh/config
-'3  1  0  ~/.ssh/ue_id_rsa
-'4  4  4  ~/.ssh/config
-'5  8  0  ~/.zshrc
+'0  1  0  ~/Sites/stampede-laravel/stampede-ui/.git/MERGE_MSG
+'1  1  0  /private/etc/hosts
+'2  24  0  ~/Sites/stampede-laravel/stampede-ui/.jshintrc
+'3  1  0  ~/.zshrc
+'4  79  0  ~/.zshrc
+'5  4  0  ~/Sites/hello.py
+'6  52  5  ~/.zshrc
+'7  30  25  ~/.zshrc
+'8  1  15  ~/Desktop/tutorial-laravel-4-real-time-chat/info.php
+'9  1  0  ~/Sites/vaprobash/Vagrantfile
 
 # Jumplist (newest first):
--'  2  16  ~/Sites/neokeo-project/setup/db/files/mysql/grant_root.sql
--'  1  0  ~/Sites/neokeo-project/setup/db/files/mysql/grant_root.sql
--'  1  0  ~/.ssh/id_rsa.pub
--'  5  22  ~/.ssh/config
+-'  1  0  ~/Sites/stampede-laravel/stampede-ui/.git/MERGE_MSG
+-'  1  0  /private/etc/hosts
+-'  24  0  ~/Sites/stampede-laravel/stampede-ui/.jshintrc
+-'  1  0  ~/Sites/stampede-laravel/stampede-ui/.jshintrc
+-'  1  0  ~/.zshrc
+-'  79  0  ~/.zshrc
+-'  50  1  ~/.zshrc
+-'  70  0  ~/.zshrc
+-'  4  0  ~/Sites/hello.py
+-'  1  0  ~/Sites/hello.py
+-'  52  5  ~/.zshrc
+-'  30  25  ~/.zshrc
+-'  1  15  ~/Desktop/tutorial-laravel-4-real-time-chat/info.php
+-'  1  0  ~/Sites/vaprobash/Vagrantfile
+-'  68  0  ~/Sites/vaprobash/Vagrantfile
+-'  207  1  ~/Sites/vaprobash/Vagrantfile
+-'  47  0  ~/Desktop/phpstorm/com/intellij/ui/Splash.class
+-'  1  0  ~/Desktop/phpstorm/com/intellij/ui/Splash.class
+-'  255  0  ~/.zshrc
+-'  1  0  ~/Sites/WEB_DIRS/htdocs_vagrant/puphpet/.zshrc
+-'  1  0  ~/Sites/WEB_DIRS/dev-stamboom_2012-12-17.sql
+-'  2  0  ~/Sites/WEB_DIRS/htdocs_kme/puppet/hieradata/common.yaml
+-'  129  0  ~/Sites/WEB_DIRS/htdocs_kme/puppet/hieradata/common.yaml
+-'  1  0  ~/Sites/WEB_DIRS/htdocs_kme/puppet/hieradata/common.yaml
+-'  4  14  ~/Sites/WEB_DIRS/htdocs_vagrant/CentOS64/hiera.yaml
+-'  1  0  ~/Sites/WEB_DIRS/htdocs_vagrant/CentOS64/hiera.yaml
+-'  18  0  ~/Sites/WEB_DIRS/htdocs/frontline/phpunit.xml
+-'  17  4  ~/Sites/WEB_DIRS/htdocs/frontline/phpunit.xml
+-'  1  0  ~/Sites/WEB_DIRS/htdocs/frontline/phpunit.xml
+-'  1  0  ~/Sites/WEB_DIRS/v2/local/wwwValuationVision/public/admin/orderdetails-backend.php
+-'  1  0  ~/Sites/WEB_DIRS/htdocs/Kareer-Discover/application/modules/auth/views/email/activate.tpl_bkp.php
+-'  22  0  ~/Sites/WEB_DIRS/htdocs/Kareer-Discover/.htaccess
+-'  1  0  ~/Sites/WEB_DIRS/htdocs/Kareer-Discover/.htaccess
+-'  1  0  ~/Sites/WEB_DIRS/v2/local/wwwValuationVision/admin/control/autodelivery.php
+-'  15  17  /private/etc/supervisord.conf
+-'  1  0  /private/etc/supervisord.conf
+-'  59  13  ~/.zshrc
+-'  87  0  /private/etc/apache2/extra/httpd-vhosts.conf
+-'  1  0  /private/etc/apache2/extra/httpd-vhosts.conf
+-'  8  0  /private/etc/apache2/extra
+-'  513  0  /private/etc/apache2/httpd.conf
+-'  1  0  /private/etc/apache2/httpd.conf
+-'  18  0  /private/etc/hosts
+-'  95  0  ~/.zshrc
+-'  1  0  ~/Sites/WEB_DIRS/htdocs_sandbox/guard/Guardfile
+-'  51  14  ~/.zshrc
+-'  13  33  ~/Sites/WEB_DIRS/htdocs_sandbox/kme_podio/composer.json
+-'  1  0  ~/Sites/WEB_DIRS/htdocs_sandbox/kme_podio/composer.json
+-'  270  1  ~/.zshrc
+-'  13  44  ~/Sites/WEB_DIRS/htdocs_sandbox/pattern/composer.json
+-'  1  0  ~/Sites/WEB_DIRS/htdocs_sandbox/pattern/composer.json
+-'  86  0  ~/.zshrc
+-'  67  59  ~/.zshrc
+-'  221  438  ~/.zshrc
+-'  159  10  ~/.zshrc
+-'  220  34  ~/.zshrc
+-'  1  0  ~/Desktop/.zshrc
+-'  1  0  ~/Desktop/.zshr
+-'  6  4  /private/etc/paths
+-'  1  0  /private/etc/paths
+-'  66  72  ~/.zshrc
+-'  60  0  ~/.zshrc
+-'  162  6  ~/.zshrc
+-'  43  48  ~/.zshrc
+-'  1  0  /private/etc/apache2/users/chris.conf
+-'  6  11  /private/etc/apache2/users/chris.conf
+-'  1  0  /private/etc/sudoers
+-'  39  0  /private/etc/sudoers
+-'  228  25  ~/.zshrc
+-'  1  0  ~/.vimrc
+-'  172  0  ~/.zshrc
+-'  1  0  /Applications/MAMP/htdocs/kareerme-discover/.zshrc
+-'  1  0  /usr/local/Cellar/mongodb/2.2.0-x86_64/bin/.mongorc.js
+-'  391  0  ~/.mongorc.js
+-'  1  0  ~/.mongorc.js
+-'  9  0  ~/.zshrc
+-'  89  0  ~/.zshrc
+-'  1  0  /usr/local/Cellar/mongodb/2.2.0-x86_64/bin/.zshrc
+-'  5  26  /Applications/MAMP/htdocs/kareerme-discover/.git/rebase-merge/git-rebase-todo
+-'  1  0  /Applications/MAMP/htdocs/kareerme-discover/.git/rebase-merge/git-rebase-todo
+-'  3  0  /Applications/MAMP/htdocs/kareerme-discover/.git/COMMIT_EDITMSG
+-'  1  0  /Applications/MAMP/htdocs/kareerme-discover/.git/COMMIT_EDITMSG
+-'  9  0  /Applications/MAMP/htdocs/kareerme-discover/.git/COMMIT_EDITMSG
+-'  40  12  ~/.zshrc
+-'  1  0  ~/.z
+-'  1  0  ~/py/hello.py
+-'  2  0  /Applications/MAMP/htdocs/camdesigns.net/header.php
+-'  1  0  /Applications/MAMP/htdocs/camdesigns.net/header.php
+-'  4  14  ~/Desktop/WebStuff/Osx-Settings-and-Such/README.md
+-'  1  0  ~/Desktop/WebStuff/Osx-Settings-and-Such/README.md
+-'  6  0  ~/.zshrc
+-'  1  0  ~/.ssh/[Command Line]
 -'  1  0  ~/.ssh/config
--'  1  0  ~/.ssh/ue_id_rsa
--'  4  4  ~/.ssh/config
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  1  0  ~/.ssh/ue_id_rsa
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  5  22  ~/.ssh/config
--'  1  0  ~/.ssh/config
--'  1  0  ~/.ssh/ue_id_rsa
--'  4  4  ~/.ssh/config
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  1  0  ~/.ssh/ue_id_rsa
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  1  0  ~/.ssh/id_rsa.pub
--'  5  22  ~/.ssh/config
--'  1  0  ~/.ssh/config
--'  1  0  ~/.ssh/ue_id_rsa
--'  4  4  ~/.ssh/config
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  1  0  ~/.ssh/ue_id_rsa
+-'  1  0  ~/.ssh/id_sls
+-'  1  0  ~/.ssh/sls
+-'  21  43  ~/.zshrc
+-'  1  0  ~/.bash_profile
 
 # History of marks within files (newest to oldest):
 
-> ~/Sites/neokeo-project/setup/db/files/mysql/grant_root.sql
-	"	2	16
-	^	2	17
-	.	2	16
-	+	2	16
-
-> ~/.ssh/id_rsa.pub
+> ~/Sites/stampede-laravel/stampede-ui/.git/MERGE_MSG
 	"	1	0
 
-> ~/.ssh/config
-	"	5	22
-	^	5	9
-	.	5	22
-	+	2	31
-	+	3	0
-	+	4	18
-	+	5	31
-	+	4	4
-	+	2	8
-	+	5	22
-
-> ~/.ssh/ue_id_rsa
+> /private/etc/hosts
 	"	1	0
+
+> ~/Sites/stampede-laravel/stampede-ui/.jshintrc
+	"	24	0
 
 > ~/.zshrc
-	"	8	0
+	"	1	0
+	^	50	2
+	.	70	1
+	+	4	0
+	+	40	13
+	+	99	0
+	+	100	1
+	+	101	2
+	+	102	0
+	+	93	1
+	+	92	2
+	+	93	0
+	+	92	1
+	+	91	2
+	+	89	1
+	+	84	42
+	+	84	41
+	+	86	0
+	+	85	0
+	+	74	2
+	+	228	26
+	+	43	47
+	+	220	11
+	+	220	249
+	+	218	1
+	+	219	68
+	+	220	438
+	+	64	72
+	+	65	0
+	+	66	72
+	+	221	438
+	+	67	59
+	+	86	17
+	+	89	63
+	+	86	0
+	+	59	12
+	+	25	15
+	+	26	12
+	+	25	12
+	+	32	0
+	+	28	16
+	+	29	18
+	+	30	8
+	+	31	1
+	+	30	25
+	+	52	6
+	+	70	1
+	k	10	0
+
+> ~/Sites/hello.py
+	"	4	0
+	^	4	0
+	.	10	17
+	+	10	17
+
+> ~/Desktop/tutorial-laravel-4-real-time-chat/info.php
+	"	1	15
+	^	1	16
+	.	2	0
+	+	2	0
+
+> ~/Sites/vaprobash/Vagrantfile
+	"	1	0
+	^	207	2
+	.	205	2
+	+	28	2
+	+	29	2
+	+	35	2
+	+	92	2
+	+	95	2
+	+	106	2
+	+	109	2
+	+	117	2
+	+	160	2
+	+	172	1
+	+	180	2
+	+	190	2
+	+	193	2
+	+	199	2
+	+	202	2
+	+	205	2
+
+> ~/Desktop/phpstorm/com/intellij/ui/Splash.class
+	"	47	0
+
+> ~/Sites/WEB_DIRS/htdocs_vagrant/puphpet/.zshrc
+	"	1	0
+
+> ~/Sites/WEB_DIRS/dev-stamboom_2012-12-17.sql
+	"	1	0
+
+> ~/Sites/WEB_DIRS/htdocs_kme/puppet/hieradata/common.yaml
+	"	2	0
+	o	129	0
+
+> ~/Sites/WEB_DIRS/htdocs_kme/puppet/manifests/default.pp
+	"	127	0
+
+> ~/Sites/WEB_DIRS/htdocs_vagrant/CentOS64/hiera.yaml
+	"	4	14
+	^	4	14
+	.	4	14
+	+	4	14
+
+> ~/Sites/WEB_DIRS/htdocs/frontline/phpunit.xml
+	"	18	0
+	.	18	0
+	+	18	0
+
+> ~/Sites/WEB_DIRS/v2/local/wwwValuationVision/public/admin/orderdetails-backend.php
+	"	1	0
+
+> ~/Sites/WEB_DIRS/htdocs/Kareer-Discover/application/modules/auth/views/email/activate.tpl_bkp.php
+	"	1	0
+
+> ~/Sites/WEB_DIRS/htdocs/Kareer-Discover/.htaccess
+	"	22	0
+
+> ~/Sites/WEB_DIRS/v2/local/wwwValuationVision/admin/control/autodelivery.php
+	"	1	0
+
+> /private/etc/supervisord.conf
+	"	15	17
+	^	15	18
+	.	15	0
+	+	1	5
+	+	1	13
+	+	15	0
+
+> /private/etc/apache2/extra/httpd-vhosts.conf
+	"	87	0
+
+> /private/etc/apache2/httpd.conf
+	"	513	0
+
+> ~/Sites/WEB_DIRS/htdocs_sandbox/guard/Guardfile
+	"	1	0
+
+> ~/Sites/WEB_DIRS/htdocs_sandbox/kme_podio/composer.json
+	"	13	33
+	^	13	34
+	.	14	0
+	+	14	0
+
+> ~/Sites/WEB_DIRS/htdocs_sandbox/pattern/composer.json
+	"	13	44
+	^	13	45
+	.	14	0
+	+	13	45
+	+	14	0
+
+> ~/Desktop/.zshrc
+	"	1	0
+
+> ~/Desktop/.zshr
+	"	1	0
+
+> /private/etc/paths
+	"	6	4
+	^	6	5
+	.	2	14
+	+	7	0
+	+	6	5
+	+	1	13
+	+	2	14
+
+> /private/etc/apache2/users/chris.conf
+	"	1	0
+	^	1	0
+	.	1	23
+	+	6	0
+	+	1	23
+
+> /private/etc/sudoers
+	"	1	0
+	^	34	20
+	.	34	19
+	+	34	19
+
+> ~/.vimrc
+	"	1	0
+
+> /Applications/MAMP/htdocs/kareerme-discover/.zshrc
+	"	1	0
+
+> /usr/local/Cellar/mongodb/2.2.0-x86_64/bin/.mongorc.js
+	"	1	0
+
+> ~/.mongorc.js
+	"	391	0
+	^	391	0
+	.	392	0
+	+	397	0
+	+	396	0
+	+	395	0
+	+	394	0
+	+	393	0
+	+	392	0
+
+> /usr/local/Cellar/mongodb/2.2.0-x86_64/bin/.zshrc
+	"	1	0
+
+> /Applications/MAMP/htdocs/kareerme-discover/.git/rebase-merge/git-rebase-todo
+	"	5	26
+	^	5	27
+	.	6	0
+	+	5	27
+	+	6	0
+
+> /Applications/MAMP/htdocs/kareerme-discover/.git/COMMIT_EDITMSG
+	"	3	0
+	.	2	0
+	+	2	0
+
+> ~/.z
+	"	1	0
+
+> ~/py/hello.py
+	"	1	0
+
+> /Applications/MAMP/htdocs/camdesigns.net/header.php
+	"	2	0
+
+> ~/Desktop/WebStuff/Osx-Settings-and-Such/README.md
+	"	4	14
+	^	4	15
+	.	4	15
+	+	5	0
+	+	4	15
+
+> ~/.ssh/config
+	"	4	25
+
+> ~/.ssh/id_sls
+	"	1	0
+
+> ~/.ssh/sls
+	"	1	0
+
+> ~/.bash_profile
+	"	1	0
+
+> ~/.bash_history
+	"	1	0

@@ -81,7 +81,7 @@ class config {
   }
 
   exec { 'composer-update':
-    command     => "/usr/local/bin/composer self-update",
+    command     => "/usr/local/bin/composer self-update && sudo npm update -g",
     returns => [0, 1, 2, 255],
     environment => ["COMPOSER_HOME=/home/vagrant"],
     logoutput => true
