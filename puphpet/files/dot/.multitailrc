@@ -1,0 +1,57 @@
+#~/.bash_profile
+
+#~/.multitailrc
+# See documentation
+# keetweej.vanheusden.com/svn/multitail/trunk/multitail.conf
+#
+# Get this file right! If you don't multitail will just crash.
+# No warning, no error, just won't start. And it's your fault.
+
+# Include default file as well (this will parse AFTER this file!)
+# Haven't found way to pre-parse file, and then overwrite defaults yet.
+#include:/etc/multitail.conf
+
+# Stupid mail check... [unix only, no cygwin]
+#check_mail:0
+
+# Possible colors: red, green, yellow, blue, magenta, cyan, white
+
+# --------------------------
+# PHP-based scheme that highlights keywords used during development
+colorscheme:php:php
+
+# built-in PHP error output format
+cs_re:white,red:PHP (Stack trace:|Fatal error:).*
+mcsre_s:,,bold:PHP Fatal error: (.*)
+# stack traces from xdebug have leading "PHP +"
+cs_re:white,red:PHP [ 0-9]+\.
+cs_re:white,yellow:PHP Warning: .*
+mcsre_s:,,bold:PHP Warning: (.*)
+cs_re:yellow:PHP Notice: .*
+mcsre_s:,,bold:PHP Notice: (.*)
+
+# custom severity tags
+cs_re:white,red,bold:\[(ALERT|CRIT|EMERG|FATAL)\]
+cs_re:red:\[(ERROR)\]
+cs_re:yellow:\[(NOTICE|WARN)\]
+cs_re:cyan:\[(INFO|DEBUG)\]
+mcsre_s:,,bold:\[(ALERT|CRIT|EMERG|ERROR|NOTICE|WARN)\]
+
+# additional substring color
+# date/times
+cs_re_s:cyan:^(([0-9]{2,})+ ?)+
+# key-value pairs
+cs_re_s:green:([a-zA-Z0-9_]+=[^ ]*)
+# brackets, quotations
+cs_re_s:blue:(\[|\]|\{|\})
+mcsre_s:green:("[^"]*")
+mcsre_s:green:('[^']*')
+# file/class paths
+mcsre_s:blue:(([a-zA-Z0-9_:]+(/|\\)+)+[a-zA-Z0-9_.]+)
+
+# --------------------------
+
+# Default scheme, no more -cS or -CS for every command
+# This simply doesn't work. Sad.
+# Add alias mt='multitail --config ~/.multitail -CS php'
+defaultcscheme:php

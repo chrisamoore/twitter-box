@@ -1,0 +1,46 @@
+---
+vagrantfile-local:
+    vm:
+        box: stampede_0.2.0
+        box_url: 'https://s3.amazonaws.com/cMoore/stampede_0.2.0.box'
+        hostname: null
+        network:
+            private_network: 192.168.56.111
+            forwarded_port:
+                1AdBcMuQzFxg:
+                    host: '8111'
+                    guest: '22'
+        provider:
+            virtualbox:
+                modifyvm:
+                    natdnshostresolver1: on
+                    memory: '2048'
+                setextradata:
+                    VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root: 1
+        provision:
+            puppet:
+                manifests_path: puphpet/puppet
+                manifest_file: manifest.pp
+                options:
+                    - '--verbose'
+                    - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
+                    - '--parser future'
+        synced_folder:
+            rskbzlJdi4xY:
+                id: vagrant-root
+                source: ./
+                target: /var/www
+                nfs: 'true'
+        usable_port_range: 2200..2250
+    ssh:
+        host: null
+        port: null
+        private_key_path: null
+        username: vagrant
+        guest_port: null
+        keep_alive: true
+        forward_agent: true
+        forward_x11: false
+        shell: 'bash -l'
+    vagrant:
+        host: detect
