@@ -145,6 +145,18 @@ class twitter_build {
     user => 'vagrant',
   }
 
+ # install the API
+    exec {'composer-install-stampede':
+        cwd => '/vagrant/twitter-laravel',
+        command => 'composer install -vvv',
+        path => ['/usr/local/bin','/usr/bin', '/bin', '/sbin'],
+        environment => ["COMPOSER_HOME=/home/vagrant"],
+        logoutput => true,
+        returns => [0, 1, 2, 255],
+        timeout => 0,
+        user => 'vagrant',
+    }
+
 # # Load our DB fixtures
 #   exec { "seed":
 #     cwd => '/vagrant/twitter-laravel',
