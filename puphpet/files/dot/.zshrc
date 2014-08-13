@@ -39,10 +39,11 @@ alias df='df -h'
 # cd
 alias ..='cd ..'
 
-alias api='cd /var/www/twitter-laravel/twitter-laravel'
-alias ui='cd /var/www/twitter-laravel/twitter-ui'
-alias l4='cd /var/www/twitter-laravel/twitter-laravel'
-alias bp='cd /var/www/twitter-laravel/twitter-api-blueprint'
+alias api='cd /var/www/twitter-laravel'
+alias l4='cd /var/www/twitter-laravel'
+alias ui='cd /var/www/twitter-ui'
+alias bp='cd /var/www/twitter-api-blueprint'
+alias blue='cd /var/www/twitter-api-blueprint'
 
 alias mongo_limit='DBQuery.shellBatchSize = 3000'
 
@@ -70,6 +71,9 @@ alias art='/var/www/twitter-laravel/artisan'
 alias bounce='sudo cp /vagrant/puphpet/files/custom/nginx.conf /etc/nginx/conf.d/nginx.conf && sudo nginx -c /etc/nginx/nginx.conf -t && sudo /etc/init.d/nginx restart && sudo /etc/init.d/php5-fpm restart'
 alias pool_bounce='sudo cp -ir /vagrant/puphpet/files/custom/www.conf /etc/php5/fpm/pool.d/www.conf'
 alias dot='cp /vagrant/puphpet/files/dot/.zshrc ~/.zshrc && . ~/.zshrc'
+
+alias cdump='composer dump-autoload -o'
+alias dbset='artisan mysql:clear'
 
 function mock(){
       if [ -z $1 ]
@@ -268,4 +272,6 @@ parse_git_branch () {
 }
 
  #PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
+
+ api
 
