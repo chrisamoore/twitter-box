@@ -81,7 +81,7 @@ class config {
   }
 
   exec { 'composer-update':
-    command     => "/usr/local/bin/composer self-update && sudo npm update -g",
+    command     => "/usr/local/bin/composer self-update",
     returns => [0, 1, 2, 255],
     environment => ["COMPOSER_HOME=/home/vagrant"],
     logoutput => true
@@ -157,15 +157,15 @@ class twitter_build {
         user => 'vagrant',
     }
 
-# # Load our DB fixtures
-#   exec { "seed":
-#     cwd => '/vagrant/twitter-laravel',
-#     command => 'php artisan env:reset -f',
-#     path => ['/usr/bin', '/bin', '/sbin'],
-#     logoutput => true,
-#     returns => [ 0, 1, 255 ],
-#     require => Exec['composer-install-twitter'],
-#   }
+# Load our DB fixtures
+   exec { "seed":
+     cwd => '/var/www/twitter-laravel',
+     command => 'php artisan mysql:clear',
+     path => ['/usr/bin', '/bin', '/sbin'],
+     logoutput => true,
+     returns => [ 0, 1, 255 ],
+     require => Exec['composer-install-twitter'],
+   }
 
 # Install UI
   exec {'npm-install':
