@@ -157,15 +157,15 @@ class twitter_build {
         user => 'vagrant',
     }
 
-# # Load our DB fixtures
-#   exec { "seed":
-#     cwd => '/vagrant/twitter-laravel',
-#     command => 'php artisan env:reset -f',
-#     path => ['/usr/bin', '/bin', '/sbin'],
-#     logoutput => true,
-#     returns => [ 0, 1, 255 ],
-#     require => Exec['composer-install-twitter'],
-#   }
+# Load our DB fixtures
+   exec { "seed":
+     cwd => '/var/www/twitter-laravel',
+     command => 'php artisan mysql:clear',
+     path => ['/usr/bin', '/bin', '/sbin'],
+     logoutput => true,
+     returns => [ 0, 1, 255 ],
+     require => Exec['composer-install-twitter'],
+   }
 
 # Install UI
   exec {'npm-install':
